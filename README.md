@@ -1,7 +1,7 @@
 Yaitron
 =======
 
-Yaitron English-Thai and Thai-English dictionary based on LEXiTRON.
+Yaitron English-Thai and Thai-English dictionary based on LEXiTRON created since May 2006. An objective of Yaitron is to built a dictionary that is formatted in well formed XML and easy to be manipulated by machine.
 
 LICENSE
 -------
