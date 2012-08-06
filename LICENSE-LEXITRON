@@ -1,0 +1,73 @@
+ Copyright (c)  2003 National Electronics and Computer Technology Center (NECTEC).
+ All rights reserved.
+
+ LICENSE AGREEMENT
+
+ License agreement (LA) is a legal agreement between you and NECTEC. 
+ Please read it carefully before redistribution, reproduction or downloading 
+ from LEXiTRON services. This license agreement consists of the above 
+ copyright notice, definitions, the acceptance of license agreement, terms 
+ of use, and disclaimer information. In addition, it provides warranty information,
+ specific terms and conditions that depart from other "free" softwares and "open source" softwares.
+
+ 1. Definitions
+ (a)"NECTEC" refers to National Electronics and Computer Technology 
+ Center which is an organization under National Science and Technology
+ Development Agency (NSTDA), Ministry of Science and Technology.
+ (b)"LEXiTRON" refers to a dictionary software and data developed by 
+ the Information Research and Development Division, NECTEC, including 
+ other software and data released by NECTEC.
+ (c)"Services" refer to any supplies for accessing to a variety of resources,
+ including tools, downloading, communication and collected information, 
+ and also any update, enhancement, new features, and/or the addition of
+ any new Web property.
+ (d)"Terms of Use" or "TOU" refers to terms and conditions for utilizing LEXiTRON.
+ (e)"You" refers to any end users and/or government and private contributors 
+ who download  program and data from LEXiTRON website in order to reproduce, 
+ redistribute and update content, material, or any products corresponding to LEXiTRON.
+ (f)"Source Code" refers to program instructions written as an text file; must be 
+ translated by a compiler or interpreter or assembler into binary form for a particular 
+ computer before execution.
+ (g)"Binary Form" refers to the machine-language output of a compiler that is 
+ ready for execution on a particular computer.
+
+ 2. Acceptance of License Agreement
+ NECTEC reserves the right to update the license agreement at any time without prior notice.
+
+ 3. Terms of Use
+ Redistribution and use in source and binary form, with or without modification, are 
+ permitted provided that all of the following conditions are met:
+ (a)Redistribution of source code must retain the above copyright notice, Acceptance
+ of License Agreement , TOU, and the disclaimer in section 4.
+ (b)Redistributions in binary form must reproduce the above copyright notice, the 
+ acceptance of terms, TOU, and the following disclaimer in the documentation and/or 
+ other materials provided with the redistribution.
+ (c)Any product, created and redistributed by you, which is composed of any part from 
+ LEXiTRON must include the following acknowledgement:  
+ "This product is created by the adaptation of LEXiTRON developed by NECTEC (http://www.nectec.or.th/)." 
+ (d)Products derived from the adaptation of LEXiTRON must not be called "LEXiTRON", 
+ nor may "LEXiTRON" appear in their name, without prior written permission of NECTEC.
+ (e)You must not use "LEXiTRON" in a manner likely to cause any damage to NECTEC 
+ or third person. NECTEC shall reserve our rights to demand any compensation, retaining fee, 
+ costs of action and execution, and expenses occured out of such manner.
+ (f)Neither the name of the National Electronics and Computer Technology Center (NECTEC) / 
+ National Science and Technology Development Agency (NSTDA) nor the names of its contributors 
+ may be used to endorse or promote product derived from this software without specific prior written permission.
+
+ 4. Disclaimer of Warranty
+ LEXiTRON, INFORMATION, CONTENT, MATERIAL, OR PRODUCT 
+ PROVIDED OR RELEASED BY NECTEC ARE THE COPYRIGHTED WORK OF
+ NECTEC. MOREOVER, LEXiTRON, INFORMATION, CONTENT, MATERIAL, 
+ OR PRODUCT PROVIDED OR RELEASED BY NECTEC AND CONTRIBUTORS 
+ ARE ALSO ON AN "AS IS" AND "AS AVAILABLE" BASIS. ANY EXPRESS OR 
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR 
+ PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL NECTEC OR CONTRIBUTORS 
+ BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, 
+ OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT 
+ OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR 
+ BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR 
+ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE SOFTWARE, 
+ INFORMATION CONTENT, MATERIAL, OR PRODUCT, EVEN IF ADVISED OF 
+ THE POSSIBILITY OF SUCH DAMAGE.
