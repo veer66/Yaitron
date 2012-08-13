@@ -1,5 +1,8 @@
 from xml.dom import pulldom
-from simplejson import dumps
+try:
+	from json import dumps
+except:
+	from simplejson import dumps
 import bsddb
 import pickle
 from xml.dom.minidom import parse, parseString
@@ -60,7 +63,7 @@ def get_similar_translations(node):
         lang = child.getAttribute("lang") 
         text = child.firstChild.nodeValue
         return Translation(text, lang) 
-    nodes = node.getElementsByTagName("translation")
+    nodes = node.getElementsByTagName("translation-similar")
     return [get_each_tr(node) for node in nodes]  
 
 
@@ -135,7 +138,6 @@ def main():
     t.dictionary = dict_db
     
     print t
-
 
     dict_db.close()
           

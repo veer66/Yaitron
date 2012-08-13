@@ -1,5 +1,9 @@
 from xml.dom import pulldom
-from simplejson import dumps
+try:
+	from json import dumps
+except:
+	from simplejson import dumps
+
 import bsddb
 
 def get_headword(node):
