@@ -46,11 +46,12 @@ class Entry:
 
     def get_pos(self, node):
         pos_nodes = node.getElementsByTagName("pos")
-        if len(pos_nodes) == 0:
-            raise NoPosError
+        #if len(pos_nodes) == 0:
+            #raise NoPosError
+            
         assert len(pos_nodes) <= 1
         if len(pos_nodes) < 1:
-            return None
+            return "NOPOS"
         else:
             pos_node0 = pos_nodes[0]
             return pos_node0.firstChild.nodeValue
