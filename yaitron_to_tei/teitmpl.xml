@@ -1,0 +1,67 @@
+#from xml.sax.saxutils import escape
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>YAiTRON</title>
+				<author>YAiTRON is created by the adaptation of LEXiTRON
+					developed by
+					NECTEC (http://www.nectec.or.th/)</author>
+			</titleStmt>
+			<publicationStmt>
+				<p>YAiTRON is a homogeneous structure dictionary.
+					YAiTRON is created by the adaptation of LEXiTRON developed by
+					NECTEC (http://www.nectec.or.th/)</p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>YAiTRON is a homogeneous structure dictionary.
+					YAiTRON is created by the adaptation of LEXiTRON developed by
+					NECTEC (http://www.nectec.or.th/)</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			#for $entry in $dictionary
+			<entry xml:lang="$entry.lang">
+				<form>
+					<orth>$escape(entry.headword)</orth>
+				</form>
+				<gramGrp>
+					<pos>$escape(entry.pos)</pos>
+				</gramGrp>			
+				<cit type="translation" xml:lang="$entry.translation.lang">
+					<quote>$escape(entry.translation.text)</quote>
+				</cit>				
+                #for $example in $entry.examples
+                <cit type="example">
+                    <quote>$escape(example)</quote>    
+                </cit>
+                #end for
+                #for $classifier in $entry.classifiers
+                <xr type="cl">
+                    <ref>$escape(classifier)</ref>
+                </xr>
+                #end for
+                #for $translation in $entry.similar_translations
+				<cit type="translation" subtype="similar" xml:lang="$translation.lang">
+					<quote>$escape(translation.text)</quote>
+				</cit>				
+                #end for
+                #for $definition in $entry.definitions
+                <def>$escape(definition)</def>
+                #end for
+                #for $note in $entry.notes
+                <note>$escape(note)</note>
+                #end for
+                #for $synonym in $entry.synonyms
+                <xr type="syn"><ref>$escape(synonym)</ref></xr>
+                #end for
+                #for $antonym in $entry.antonyms
+                <xr type="ant"><ref>$escape(antonym)</ref></xr>
+                #end for
+			</entry>
+			#end for
+		</body>
+	</text>
+</TEI>
