@@ -1,0 +1,6 @@
+database:
+    database: yaitron
+    user: root
+    password: onmodao
+    host: localhost
+    table_name: yaitron_th_gloss
