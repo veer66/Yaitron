@@ -1,5 +1,6 @@
 from xml.dom import pulldom
 import sys
+import json
 
 class NoPosError(RuntimeError):
     pass
@@ -8,6 +9,9 @@ class Translation:
     def __init__(self, text, lang):
         self.text = text
         self.lang = lang[0:2]
+
+    def to_dict(self):
+        return {"text": self.text, "lang": self.lang}
 
 class Entry:
     def __init__(self, node, entry_id):
@@ -23,7 +27,20 @@ class Entry:
         self.notes = self.get_notes(node)        
         self.synonyms = self.get_synonyms(node)
         self.antonyms = self.get_antonyms(node)
-        
+ 
+    def to_dict(self):
+        return {"entry_id": self.entry_id,
+                "lang": self.lang,
+                "headword": self.headword,
+                "pos": self.pos,
+                "translation": self.translation.to_dict(),
+                "examples": self.examples,
+                "classifiers": self.classifiers,
+                "similar_translations": map(lambda t: t.to_dict(), self.similar_translations),
+                "definitions": self.definitions,
+                "notes": self.notes,
+                "synonyms": self.synonyms,
+                "antonyms": self.antonyms}
 
     def get_text(self, node):
         return "".join([child.nodeValue for child in node.childNodes])
@@ -107,7 +124,8 @@ def main():
     sys.setdefaultencoding('utf-8')   
     reader = YaitronReader(sys.argv[1])
     for entry in reader.read():
-        print(entry.lang, entry.translation.text)
+        #print(entry.lang, entry.translation.text)
+        print json.dumps(entry.to_dict())
           
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+     main()
