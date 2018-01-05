@@ -9,4 +9,4 @@ sys.setdefaultencoding('utf8')
 reader = YaitronReader("../data/yaitron.xml")
 
 for entry in reader.read():
-  print(entry.to_dict())
+  print(json.dumps(entry.to_dict()))
