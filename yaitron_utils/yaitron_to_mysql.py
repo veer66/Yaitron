@@ -1,6 +1,7 @@
 import MySQLdb as Db
 import ConfigParser
 import sys
+from imp import reload
 from yaitron_reader import YaitronReader 
 
 
@@ -53,6 +54,6 @@ class YaitronMysqlExporter:
         self.connection.commit()
 
 reload(sys)        
-sys.setdefaultencoding('utf8')        
+       
 exporter = YaitronMysqlExporter()
 exporter.export(sys.argv[1])

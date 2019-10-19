@@ -44,7 +44,8 @@ def create_entry(node):
 
       
 def main():
-    import sys  
+    import sys
+    from imp import reload
     reload(sys)  
     sys.setdefaultencoding('utf-8')
    

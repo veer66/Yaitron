@@ -115,8 +115,8 @@ class DictDb:
 #                break
             raw_entry = self.db[key]
             doc = parseString(u"<doc>" + raw_entry + u"</doc>")
-            print >>sys.stderr, "i = ", i
-            print >>sys.stderr, raw_entry
+            print("i = "+ str(i), file = sys.stderr)
+            print(raw_entry, file = sys.stderr)
             try:
                 entry = create_entry(doc.getElementsByTagName("entry")[0])
                 yield entry
@@ -129,6 +129,7 @@ class DictDb:
 
 def main():
     import sys  
+    from imp import reload
     reload(sys)  
     sys.setdefaultencoding('utf-8')
 
@@ -137,7 +138,7 @@ def main():
     dict_db = DictDb()
     t.dictionary = dict_db
     
-    print t
+    print(t)
 
     dict_db.close()
           

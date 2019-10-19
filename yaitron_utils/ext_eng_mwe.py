@@ -1,7 +1,8 @@
 import sys
 from yaitron_reader import YaitronReader 
+from imp import reload
 reload(sys)        
-sys.setdefaultencoding('utf-8')   
+  
 reader = YaitronReader(sys.argv[1])
 
 for entry in reader.read():
@@ -9,4 +10,4 @@ for entry in reader.read():
     if e["lang"] == u"en":
         headword = e["headword"]
         if len(headword.split()) > 1:
-            print headword
+            print(headword)
