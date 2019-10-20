@@ -1,9 +1,10 @@
 import sys
 import sqlite3
+from imp import reload
 from yaitron_reader import YaitronReader 
 
 reload(sys)        
-sys.setdefaultencoding('utf8')        
+       
 
 reader = YaitronReader("../data/yaitron.xml")
 conn = sqlite3.connect("yaitron.sqlite")

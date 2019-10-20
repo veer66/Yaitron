@@ -119,13 +119,14 @@ class YaitronReader:
                 entry_id += 1
         
 def main():
-    import sys  
+    import sys
+    from imp import reload
     reload(sys)  
-    sys.setdefaultencoding('utf-8')   
+      
     reader = YaitronReader(sys.argv[1])
     for entry in reader.read():
         #print(entry.lang, entry.translation.text)
-        print json.dumps(entry.to_dict())
+        print(json.dumps(entry.to_dict()))
           
 if __name__ == '__main__':
      main()

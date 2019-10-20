@@ -2,9 +2,10 @@ import sys
 import sqlite3
 from yaitron_reader import YaitronReader 
 import json
+from imp import reload
 
 reload(sys)        
-sys.setdefaultencoding('utf8')        
+       
 
 reader = YaitronReader("../data/yaitron.xml")
 
@@ -19,4 +20,4 @@ for entry in reader.read():
 for k in eng_dict:
   eng_dict[k] = list(set(eng_dict[k]))
 
-print json.dumps(eng_dict)
+print(json.dumps(eng_dict))

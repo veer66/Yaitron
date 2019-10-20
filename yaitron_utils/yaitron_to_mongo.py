@@ -1,9 +1,10 @@
 import sys
 from yaitron_reader import YaitronReader 
 from pymongo import Connection
+from imp import reload
 
 reload(sys)        
-sys.setdefaultencoding('utf-8')   
+  
 reader = YaitronReader(sys.argv[1])
 
 client = Connection()
